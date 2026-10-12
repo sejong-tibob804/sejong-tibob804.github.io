@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tibob804</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b2430; --muted:#5b6876; --bg:#fbfdff; --line:#dde6ef; --accent:#1f6feb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e7eff7; --muted:#9bacbd; --bg:#0d1620; --line:#22303f; --accent:#7cb8ff; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); min-height:100vh;
+         display:flex; align-items:center; justify-content:center; padding:24px;
+         font:16px/1.7 -apple-system,"Segoe UI",system-ui,"Apple SD Gothic Neo",sans-serif; }
+  .wrap { max-width:520px; width:100%; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 28px; font-size:14px; }
+  h2 { font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
+       margin:0 0 10px; font-weight:600; }
+  ul { list-style:none; padding:0; margin:0 0 28px; }
+  li { border-top:1px solid var(--line); padding:14px 2px; }
+  li:last-child { border-bottom:1px solid var(--line); }
+  .name { font-weight:600; }
+  .desc { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  footer { color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>tibob804</h1>
+    <p class="sub">만든 것들</p>
+
+    <h2>게임</h2>
+    <ul>
+      <li>
+        <div class="name">Penguin's Volcano Run</div>
+        <div class="desc">배로 미끄러지는 펭귄 러너. 반사신경이 아니라 2초 앞을 읽는 게임.</div>
+        <div>
+          <a href="https://play.google.com/store/apps/details?id=com.tibob804.volcanorun">Google Play</a>
+          &nbsp;·&nbsp;
+          <a href="https://sejong-tibob804.github.io/penguin-privacy/">개인정보처리방침</a>
+        </div>
+      </li>
+    </ul>
+
+    <footer>문의 <a href="mailto:tibob804@gmail.com">tibob804@gmail.com</a></footer>
+  </div>
+</body>
+</html>
