@@ -56,10 +56,10 @@
 <table>
   <tr><th>저장 항목</th><th>내용</th></tr>
   <tr><td><code>progress.cfg</code></td><td>스테이지 진행도와 최고 기록, 획득한 별과 코인, 보유·장착한 꾸미기 아이템, 보스 도감 기록</td></tr>
-  <tr><td><code>settings.cfg</code></td><td>음악·효과음 크기, 진동, 조작 감도, 언어 설정</td></tr>
+  <tr><td><code>settings.cfg</code></td><td>음악·효과음 크기, 진동, 조작 감도, 언어 설정, 처음 실행 때 입력한 <strong>태어난 해</strong>(광고 연령 구분용)</td></tr>
 </table>
 <p>
-  이름, 연락처 등 이용자를 알아볼 수 있는 정보는 입력받지도 저장하지도 않습니다.
+  이름, 연락처, 생년월일 등 이용자를 알아볼 수 있는 정보는 입력받지도 저장하지도 않습니다.
   안드로이드의 <strong>자동 백업</strong>이 켜져 있으면, 위 정보가 이용자 본인의 Google 계정 백업에 포함될 수 있습니다.
   이는 Google이 제공하는 기능이며 개발자는 그 백업에 접근할 수 없습니다.
 </p>
@@ -75,6 +75,17 @@
   <li>Google 광고 관련 정책: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></li>
   <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
 </ul>
+<h3>연령에 따른 광고</h3>
+<p>
+  게임을 처음 실행할 때 <strong>태어난 해</strong>만 한 번 묻습니다(생년월일은 묻지 않습니다). 이 값은 기기에만 저장되며,
+  광고 요청에는 나이 자체가 아니라 아래 구분만 반영됩니다.
+</p>
+<ul>
+  <li><strong>만 14세 미만</strong>(으로 볼 수 있는 경우): 아동 대상 광고 요청으로 표시하여, 맞춤 광고 없이 어린이에게 적합한 광고만 표시합니다.</li>
+  <li><strong>만 14세 이상 18세 미만</strong>: 동의 연령 미만 이용자로 표시하여 맞춤 광고를 사용하지 않습니다.</li>
+  <li><strong>만 18세 이상</strong>: 아래의 동의에 따라 일반 광고 또는 맞춤 광고를 표시합니다.</li>
+</ul>
+<p>모든 이용자에게 광고 콘텐츠 등급은 PG(보호자 지도) 이하로 제한합니다. 생일을 알 수 없으므로 나이는 어린 쪽으로 계산합니다.</p>
 <h3>동의와 선택</h3>
 <ul>
   <li>유럽경제지역(EEA)·영국 이용자에게는 GDPR에 따라 동의 양식이 표시되며, 그 선택에 따라 맞춤 광고 여부가 결정됩니다.
@@ -94,7 +105,8 @@
 <h2>6. 이용 연령</h2>
 <p>
   이 게임은 <strong>만 13세 이상</strong>을 대상으로 하며, 만 13세 미만 아동을 대상으로 하지 않습니다.
-  개발자는 아동을 포함한 누구에게서도 개인정보를 수집하지 않습니다.
+  다만 어린이가 이용할 수 있으므로, 처음 실행 때의 연령 확인으로 어린이에게는 위 4의 아동 대상 광고만 표시합니다.
+  게임 내용은 나이와 관계없이 같으며 모든 연령에 적합합니다. 개발자는 아동을 포함한 누구에게서도 개인정보를 수집하지 않습니다.
 </p>
 
 <h2>7. 권한</h2>
@@ -138,7 +150,7 @@
 <table>
   <tr><th>File</th><th>Contents</th></tr>
   <tr><td><code>progress.cfg</code></td><td>Stage progress and best times, stars and coins earned, owned and equipped cosmetic items, boss collection records</td></tr>
-  <tr><td><code>settings.cfg</code></td><td>Music and sound volume, vibration, control sensitivity, language preference</td></tr>
+  <tr><td><code>settings.cfg</code></td><td>Music and sound volume, vibration, control sensitivity, language preference, and the <strong>birth year</strong> you enter on first launch (used only to choose the type of ads)</td></tr>
 </table>
 <p>
   The Game never asks for or stores your name, contact details, or anything else that identifies you.
@@ -157,6 +169,17 @@
   <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses data in advertising</a></li>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
 </ul>
+<h3>Ads by age</h3>
+<p>
+  The first time you start the Game, it asks once for your <strong>birth year</strong> only (never your full date of birth).
+  It is stored only on your device; ad requests carry only the group below, never your age itself.
+</p>
+<ul>
+  <li><strong>Under 14</strong> (or possibly under 14): ad requests are tagged as child-directed, so only child-appropriate, non-personalised ads are shown.</li>
+  <li><strong>14 to 17</strong>: ad requests are tagged as under the age of consent, so ads are not personalised.</li>
+  <li><strong>18 and over</strong>: general or personalised ads, depending on your consent below.</li>
+</ul>
+<p>For everyone, ad content is limited to a PG rating. Because the birthday is unknown, age is counted on the younger side.</p>
 <h3>Consent and choices</h3>
 <ul>
   <li>Players in the European Economic Area and the United Kingdom are shown a GDPR consent form, and their choice
@@ -177,7 +200,8 @@
 <h2>6. Age</h2>
 <p>
   The Game is intended for players <strong>aged 13 and over</strong> and is not directed at children under 13.
-  The developer collects no personal information from anyone, children included.
+  Because children may still play, the age check on first launch makes sure children see only the child-directed ads described in section 4.
+  The game content is the same for every age and suitable for all ages. The developer collects no personal information from anyone, children included.
 </p>
 
 <h2>7. Permissions</h2>
@@ -221,7 +245,7 @@
 <table>
   <tr><th>保存項目</th><th>内容</th></tr>
   <tr><td><code>progress.cfg</code></td><td>ステージの進行状況とベスト記録、獲得した星とコイン、所持・装備中の着せ替えアイテム、ボス図鑑の記録</td></tr>
-  <tr><td><code>settings.cfg</code></td><td>音楽・効果音の音量、振動、操作感度、言語設定</td></tr>
+  <tr><td><code>settings.cfg</code></td><td>音楽・効果音の音量、振動、操作感度、言語設定、初回起動時に入力した<strong>生まれた年</strong>(広告の年齢区分のため)</td></tr>
 </table>
 <p>
   名前や連絡先など、利用者を特定できる情報は入力も保存もしません。
@@ -240,6 +264,17 @@
   <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google の広告におけるデータの使用</a></li>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
 </ul>
+<h3>年齢に応じた広告</h3>
+<p>
+  初回起動時に<strong>生まれた年</strong>だけを一度お聞きします(生年月日は聞きません)。この値は端末にのみ保存され、
+  広告リクエストには年齢そのものではなく、次の区分だけが反映されます。
+</p>
+<ul>
+  <li><strong>14歳未満</strong>(の可能性がある場合):子ども向けの広告リクエストとして扱い、パーソナライズしない子ども向けの広告のみを表示します。</li>
+  <li><strong>14歳以上18歳未満</strong>:同意年齢未満の利用者として扱い、パーソナライズ広告を使用しません。</li>
+  <li><strong>18歳以上</strong>:下記の同意に応じて、一般広告またはパーソナライズ広告を表示します。</li>
+</ul>
+<p>すべての利用者に対し、広告コンテンツのレーティングを PG(保護者の指導)以下に制限します。誕生日は分からないため、年齢は若い側で計算します。</p>
 <h3>同意と選択</h3>
 <ul>
   <li>欧州経済領域(EEA)・英国の利用者には GDPR に基づく同意フォームが表示され、その選択によってパーソナライズ広告の有無が決まります。
@@ -260,7 +295,8 @@
 <h2>6. 対象年齢</h2>
 <p>
   本ゲームは<strong>13歳以上</strong>を対象としており、13歳未満の子どもを対象としていません。
-  開発者は、子どもを含め誰からも個人情報を収集しません。
+  ただし子どもが利用する可能性があるため、初回起動時の年齢確認により、子どもには上記4の子ども向け広告のみを表示します。
+  ゲーム内容は年齢にかかわらず同じで、すべての年齢に適しています。開発者は、子どもを含め誰からも個人情報を収集しません。
 </p>
 
 <h2>7. 権限</h2>
